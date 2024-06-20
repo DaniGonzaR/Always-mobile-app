@@ -1,0 +1,2 @@
+Os presento Always, mi trabajo final de grado en el cual he desarrollado una aplicación móvil la cual consiste en una red social que busca la autenticidad conectando usuarios mediante imagenes las cuales desaparecen 24 horas después de ser subidas aunque estas se guardan en la galería de tu aplicación y las puedes consultar cuando quieras.
+Tecnologías utilizadas: Java, Android Studio y Firebase (Firestore Cloud y Authentication).

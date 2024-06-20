@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "74429131227",
+    "firebase_url": "https://proyecto-tfg-e7816-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "proyecto-tfg-e7816",
+    "storage_bucket": "proyecto-tfg-e7816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74429131227:android:04c665c7f6e6bcd1165ffe",
+        "android_client_info": {
+          "package_name": "com.example.always"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT4dBFU4Qc0IKlf0AunnXZPSYARvPZV9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

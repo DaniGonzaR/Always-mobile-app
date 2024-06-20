@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:onClick="openImagePicker"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nickname"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewSmallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description and biography"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_below="@id/textViewName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:inputType="textMultiLine"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCircles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSmallText"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewCircle1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icons8_usuario_masculino_en_c_rculo_64"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewCircle2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icons8_usuario_masculino_en_c_rculo_64"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/imageViewCircle3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icons8_usuario_masculino_en_c_rculo_64"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewCircle4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icons8_usuario_masculino_en_c_rculo_64"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_above="@id/imageViewMainActivity"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageViewMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="goToMainActivity"
+        android:src="@drawable/icons8_casa_24" />
+
+    <ImageView
+        android:id="@+id/imageViewNewReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icons8_c_mara_24"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/imageViewMainActivity"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="goToNewReminderActivity"/>
+
+    <ImageView
+        android:id="@+id/imageViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icons8_ajustes_24_bueno"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/imageViewMainActivity"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="goToSettingsActivity" />
+
+</RelativeLayout>

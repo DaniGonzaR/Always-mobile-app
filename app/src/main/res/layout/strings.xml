@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Actividad de Inicio de Sesión -->
+    <string name="app_name" translatable="false">Always</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button_text">Iniciar sesión</string>
+    <string name="not_registered">¿Aún no estás registrado? Registrarse</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+
+    <!-- Menú Principal -->
+    <string name="main_menu_title">Menú principal</string>
+    <string name="memoraes">Memorias</string>
+    <string name="reminders">Recordatorios</string>
+    <string name="my_profile">Mi Perfil</string>
+
+    <!-- Diseño de Amigo -->
+    <string name="search_user_hint">Buscar usuario</string>
+    <string name="add_memorae">Agregar Memoria</string>
+    <string name="memoraes_requests">Solicitudes de Memoria</string>
+    <string name="show_memoraes">Mostrar Memorias</string>
+
+    <!-- Esquinas -->
+    <string name="my_memoraes">Mis Memorias</string>
+    <string name="reminder_description">Descripción del Recordatorio</string>
+    <string name="name_placeholder">Nombre</string>
+    <string name="time_placeholder">12:00 PM</string>
+
+    <!-- Mi Perfil -->
+    <string name="profile_title">Mi Perfil</string>
+    <string name="small_text">Descripción y biografía</string>
+
+    <!-- Nuevo Recordatorio -->
+    <string name="btn_take_picture">Tomar foto</string>
+    <string name="btn_accept">Aceptar</string>
+    <string name="btn_reject">Rechazar</string>
+    <string name="reminder_description_hint">Descripción del recordatorio</string>
+
+    <!-- Configuración del Perfil -->
+    <string name="update_password">Actualizar contraseña</string>
+    <string name="update_email">Actualizar correo electrónico</string>
+    <string name="edit_bio">Editar biografía</string>
+    <string name="edit_profile_picture">Editar foto de perfil</string>
+    <string name="sign_out">Cerrar sesión</string>
+
+    <!-- Aleatorio -->
+    <string name="random">Aleatorio</string>
+
+    <!-- Restablecer Contraseña -->
+    <string name="reset_password">Restablecer contraseña</string>
+    <string name="email_hint">Correo electrónico</string>
+    <string name="reset_password_button">Restablecer contraseña</string>
+    <string name="go_back">Volver</string>
+
+    <!-- Registrarse -->
+    <string name="register">Registrarse</string>
+    <string name="username_hint">Nombre de usuario</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="log_in_redirect">Iniciar sesión</string>
+
+    <!-- Elemento de Amigo -->
+    <string name="username">Nombre de usuario</string>
+
+    <!-- Elemento de Imagen -->
+    <string name="picture_time">Hora de la imagen</string>
+
+</resources>

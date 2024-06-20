@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black"
+    android:gravity="center">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:orientation="horizontal"
+        android:alignmentMode="alignMargins"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/emoticon1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon1"
+            android:contentDescription="Emoticon 1" />
+
+        <ImageView
+            android:id="@+id/emoticon2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon2"
+            android:contentDescription="Emoticon 2" />
+
+        <ImageView
+            android:id="@+id/emoticon3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon3"
+            android:contentDescription="Emoticon 3" />
+
+        <ImageView
+            android:id="@+id/emoticon4"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon4"
+            android:contentDescription="Emoticon 4" />
+
+        <ImageView
+            android:id="@+id/emoticon5"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon5"
+            android:contentDescription="Emoticon 5" />
+
+        <ImageView
+            android:id="@+id/emoticon6"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon6"
+            android:contentDescription="Emoticon 6" />
+
+        <ImageView
+            android:id="@+id/emoticon7"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon7"
+            android:contentDescription="Emoticon 7" />
+
+        <ImageView
+            android:id="@+id/emoticon8"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon8"
+            android:contentDescription="Emoticon 8" />
+
+        <ImageView
+            android:id="@+id/emoticon9"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon9"
+            android:contentDescription="Emoticon 9" />
+
+        <ImageView
+            android:id="@+id/emoticon10"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon10"
+            android:contentDescription="Emoticon 10" />
+
+        <ImageView
+            android:id="@+id/emoticon11"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon11"
+            android:contentDescription="Emoticon 11" />
+
+        <ImageView
+            android:id="@+id/emoticon12"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/emoticon12"
+            android:contentDescription="Emoticon 12" />
+
+    </GridLayout>
+
+</LinearLayout>

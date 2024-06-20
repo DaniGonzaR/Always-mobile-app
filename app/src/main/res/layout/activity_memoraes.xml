@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Memoraes"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:textColor="@android:color/white"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-88dp"
+            android:layout_marginBottom="25dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="goBack"
+            android:src="@drawable/icons8_izquierda_c_rculo_50" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/upperLeftLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileUpperLeft"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameUpperLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileUpperLeft"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textViewTimeUpperLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameUpperLeft"
+                    android:layout_toEndOf="@id/imageViewProfileUpperLeft"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageViewUpperLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeUpperLeft"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionUpperLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewUpperLeft"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/upperRightLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileUpperRight"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameUpperRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileUpperRight"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeUpperRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameUpperRight"
+                    android:layout_toEndOf="@id/imageViewProfileUpperRight"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageViewUpperRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeUpperRight"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionUpperRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewUpperRight"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/lowerLeftLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="50dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileLowerLeft"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameLowerLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileLowerLeft"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeLowerLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameLowerLeft"
+                    android:layout_toEndOf="@id/imageViewProfileLowerLeft"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageViewLowerLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeLowerLeft"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionLowerLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewLowerLeft"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lowerRightLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileLowerRight"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameLowerRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileLowerRight"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeLowerRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameLowerRight"
+                    android:layout_toEndOf="@id/imageViewProfileLowerRight"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageViewLowerRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeLowerRight"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionLowerRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewLowerRight"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <RelativeLayout
+                android:id="@+id/centerTopLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileCenterTop"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameCenterTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileCenterTop"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeCenterTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameCenterTop"
+                    android:layout_toEndOf="@id/imageViewProfileCenterTop"
+                    android:textColor="@android:color/white"/>
+>
+                <ImageView
+                    android:id="@+id/imageViewCenterTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeCenterTop"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionCenterTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewCenterTop"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/centerBottomLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileCenterBottom"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameCenterBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileCenterBottom"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeCenterBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameCenterBottom"
+                    android:layout_toEndOf="@id/imageViewProfileCenterBottom"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageViewCenterBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeCenterBottom"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionCenterBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewCenterBottom"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/upperLeftLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileUpperLeft2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameUpperLeft2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileUpperLeft2"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeUpperLeft2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameUpperLeft2"
+                    android:layout_toEndOf="@id/imageViewProfileUpperLeft2"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageViewUpperLeft2"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeUpperLeft2"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionUpperLeft2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewUpperLeft2"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/upperRightLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp">
+->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfileUpperRight2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNameUpperRight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:width="100dp"
+                    android:layout_toEndOf="@id/imageViewProfileUpperRight2"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/textViewTimeUpperRight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:layout_below="@id/textViewNameUpperRight2"
+                    android:layout_toEndOf="@id/imageViewProfileUpperRight2"
+                    android:textColor="@android:color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageViewUpperRight2"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/textViewTimeUpperRight2"
+                    android:src="@drawable/logo_always"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textViewImageDescriptionUpperRight2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder description"
+                    android:layout_below="@id/imageViewUpperRight2"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

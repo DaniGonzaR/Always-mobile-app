@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".Activities.Main.ProfileSettingsActivity">
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_lock_24_negro"/>
+
+    <Button
+        android:id="@+id/btn_update_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update email"
+        app:layout_constraintTop_toBottomOf="@id/btn_reset_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/icons8_email_24_negro"/>
+
+    <Button
+        android:id="@+id/btn_edit_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Edit bio"
+        app:layout_constraintTop_toBottomOf="@id/btn_update_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/icons8_editar_24"/>
+
+    <Button
+        android:id="@+id/btn_change_profile_photo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Edit profile picture"
+        app:layout_constraintTop_toBottomOf="@id/btn_edit_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/icons8_fotoperfil_24_negro" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_profile_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:drawableBottom="@drawable/icons8_cerrar_sesi_n_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

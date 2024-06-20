@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/friend_username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search user"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/edittextpersonalizado"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/add_friend_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Memorae"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/display_friend_requests_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Memoraes requests"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/display_friends_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Memoraes"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friends_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/recyclerview_border"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:visibility="gone"/>
+
+</LinearLayout>
